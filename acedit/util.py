@@ -303,8 +303,8 @@ class Utilities:
                     'hs': 'ghc --make -O -dynamic -o ' + basename,
                     'py': None,
                     'rb': None,
-                    'c': 'gcc -fno-asm -lm -s -O2 -o ' + basename,
-                    'cpp': 'g++ -lm -x c++ -O2 -std=c++14 -o ' + basename,
+                    'c': 'gcc -DONLINE_JUDGE -fno-asm -lm -s -O2 -o ' + basename,
+                    'cpp': 'g++ -DONLINE_JUDGE -lm -s -x c++ -O2 -std=c++14 -o ' + basename,
                     'java': 'javac -d .'
                 }[extension]
 
